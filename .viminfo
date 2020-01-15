@@ -7,11 +7,16 @@
 
 # hlsearch on (H) or off (h):
 ~H
+# Last Search Pattern:
+~Msle0~/\<tasks\>
+
 # Command Line History (newest to oldest):
-:q!
 :wq
+:q
+:q!
 
 # Search String History (newest to oldest):
+? \<tasks\>
 
 # Expression History (newest to oldest):
 
@@ -20,15 +25,100 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+""-	CHAR	0
+	0
 
 # File marks:
-'0  253  0  /etc/ansible/ansible.cfg
-'1  2  19  ~/deploy-inventory/inventory
-'2  27  7  ~/deploy-inventory/inventory
-'3  30  0  ~/deploy-inventory/inventory
+'0  34  0  ~/control-errors/playbook.yml
+'1  14  42  ~/control-errors/playbook.yml
+'2  31  0  ~/control-errors/playbook.yml
+'3  5  21  ~/control-errors/playbook.yml
+'4  25  23  ~/control-errors/playbook.yml
+'5  15  22  ~/control-errors/playbook.yml
+'6  20  20  ~/control-errors/playbook.yml
+'7  1  1  ~/control-errors/inventory
+'8  45  7  ~/control-handlers/configure_db.yml
+'9  37  1  ~/control-handlers/configure_db.yml
 
 # Jumplist (newest first):
+-'  34  0  ~/control-errors/playbook.yml
+-'  26  0  ~/control-errors/playbook.yml
+-'  14  8  ~/control-errors/playbook.yml
+-'  31  1  ~/control-errors/playbook.yml
+-'  5  4  ~/control-errors/playbook.yml
+-'  25  10  ~/control-errors/playbook.yml
+-'  15  5  ~/control-errors/playbook.yml
+-'  20  7  ~/control-errors/playbook.yml
+-'  1  0  ~/control-errors/playbook.yml
+-'  1  1  ~/control-errors/inventory
+-'  45  7  ~/control-handlers/configure_db.yml
+-'  37  2  ~/control-handlers/configure_db.yml
+-'  33  6  ~/control-handlers/configure_db.yml
+-'  1  0  ~/control-handlers/configure_db.yml
+-'  5  26  ~/control-flow/database_users_tasks.yml
+-'  14  2  ~/control-flow/database_users_tasks.yml
+-'  5  32  ~/control-flow/database_setup.yml
+-'  22  6  ~/control-flow/database_setup.yml
+-'  24  4  ~/control-flow/database_setup.yml
+-'  18  8  ~/control-flow/database_setup.yml
+-'  1  0  ~/control-flow/database_setup.retry
+-'  23  0  ~/control-flow/database_setup.yml
+-'  8  2  ~/control-flow/database_users_tasks.yml
+-'  21  0  ~/control-flow/RedHat_database_tasks.yml
+-'  12  6  ~/control-flow/RedHat_database_tasks.yml
+-'  21  10  ~/control-flow/database_setup.yml
+-'  29  6  ~/control-flow/database_setup.yml
+-'  1  0  ~/control-flow/database_users_tasks.yml
+-'  1  0  ~/control-flow/RedHat_database_tasks.yml
+-'  1  0  ~/control-flow/database_setup.yml
+-'  7  2  ~/data-secret/create_users.yml
+-'  9  0  ~/data-secret/secret.yml
+-'  4  2  ~/data-secret/create_users.yml
+-'  13  0  ~/data-secret/create_users.yml
+-'  13  6  ~/data-facts/playbook.yml
+-'  1  0  ~/data-facts/playbook.yml
+-'  16  6  ~/data-facts/setup_fact.yml
+-'  1  0  ~/data-facts/setup_fact.yml
+-'  4  15  ~/data-facts/custom.fact
+-'  1  0  ~/data-facts/custom.fact
+-'  48  0  /etc/ansible/hosts
+-'  44  0  /etc/ansible/hosts
+-'  1  0  /etc/ansible/hosts
+-'  1  0  /etc/ansible
+-'  496  2  /etc/ansible/ansible.cfg
 -'  253  0  /etc/ansible/ansible.cfg
+-'  1  258  ~/data-secret/create_users.yml
+-'  1  0  ~/data-secret/secret.yml
+-'  1  5  ~/data-secret/vault-pass
+-'  48  2  ~/data-variables/playbook.yml
+-'  11  2  ~/data-variables/playbook.yml
+-'  53  2  ~/data-variables/playbook.yml
+-'  52  0  ~/data-variables/playbook.yml
+-'  1  0  ~/data-variables/playbook.yml
+-'  45  4  ~/playbook-multi/intranet.yml
+-'  46  0  ~/playbook-multi/intranet.yml
+-'  37  2  ~/playbook-multi/intranet.yml
+-'  43  8  ~/playbook-multi/intranet.yml
+-'  41  4  ~/playbook-multi/intranet.yml
+-'  38  4  ~/playbook-multi/intranet.yml
+-'  19  4  ~/playbook-multi/intranet.yml
+-'  20  6  ~/playbook-multi/intranet.yml
+-'  28  6  ~/playbook-multi/intranet.yml
+-'  11  6  ~/playbook-multi/intranet.yml
+-'  1  0  ~/playbook-multi/intranet.yml
+-'  20  0  ~/playbook-basic/site.yml
+-'  19  6  ~/playbook-basic/site.yml
+-'  12  3  ~/playbook-basic/site.yml
+-'  1  0  ~/playbook-basic/site.yml
+-'  2  7  ~/test.yml
+-'  1  0  ~/test.yml
+-'  4  10  ~/deploy-manage/ansible.cfg
+-'  8  0  ~/deploy-manage/ansible.cfg
+-'  10  0  ~/deploy-manage/ansible.cfg
+-'  11  0  ~/deploy-manage/ansible.cfg
+-'  10  0  ~/deploy-manage/inventory
+-'  1  0  ~/deploy-manage/inventory
+-'  1  0  ~/deploy-manage/ansible.cfg
 -'  1  0  /etc/ansible/ansible.cfg
 -'  2  19  ~/deploy-inventory/inventory
 -'  27  0  ~/deploy-inventory/inventory
@@ -40,37 +130,290 @@
 -'  30  0  ~/deploy-inventory/inventory
 -'  1  0  ~/deploy-inventory/inventory
 -'  24  7  ~/deploy-inventory/inventory
+-'  2  19  ~/deploy-inventory/inventory
+-'  27  0  ~/deploy-inventory/inventory
+-'  30  0  ~/deploy-inventory/inventory
+-'  1  0  ~/deploy-inventory/inventory
+-'  24  7  ~/deploy-inventory/inventory
+-'  2  19  ~/deploy-inventory/inventory
+-'  27  0  ~/deploy-inventory/inventory
+-'  30  0  ~/deploy-inventory/inventory
 
 # History of marks within files (newest to oldest):
 
-> /etc/ansible/ansible.cfg
-	"	253	0
-
-> ~/deploy-inventory/inventory
-	"	2	19
-	^	2	20
-	.	2	19
-	+	1	12
-	+	5	27
-	+	7	9
-	+	8	0
-	+	8	23
-	+	9	23
-	+	11	14
-	+	12	23
-	+	14	8
-	+	15	23
-	+	16	0
-	+	17	13
-	+	20	10
-	+	21	23
-	+	23	12
-	+	24	23
-	+	25	6
-	+	24	6
+> ~/control-errors/playbook.yml
+	"	34	0
+	^	34	1
+	.	34	0
+	+	10	44
+	+	12	33
+	+	16	44
+	+	19	31
+	+	20	20
+	+	15	5
+	+	9	1
+	+	10	4
+	+	11	7
+	+	12	9
+	+	13	9
+	+	16	5
+	+	18	7
+	+	19	9
+	+	20	9
+	+	17	6
+	+	16	10
+	+	25	24
+	+	21	9
+	+	22	44
+	+	23	9
+	+	24	17
+	+	23	14
 	+	25	23
-	+	27	13
-	+	29	12
-	+	27	7
-	+	1	0
-	+	2	19
+	+	5	21
+	+	26	8
+	+	34	33
+	+	30	25
+	+	14	41
+	+	26	0
+	+	27	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	32	0
+	+	33	0
+	+	34	0
+
+> ~/control-errors/inventory
+	"	1	1
+
+> ~/control-handlers/configure_db.yml
+	"	45	7
+	^	45	8
+	.	45	7
+	+	13	54
+	+	15	33
+	+	19	0
+	+	21	15
+	+	22	32
+	+	26	10
+	+	24	21
+	+	26	63
+	+	27	14
+	+	28	36
+	+	39	31
+	+	42	25
+	+	45	23
+	+	33	6
+	+	36	1
+	+	45	7
+
+> ~/control-flow/database_users_tasks.yml
+	"	5	26
+	^	5	27
+	.	5	27
+	+	5	33
+	+	13	21
+	+	14	42
+	+	2	7
+	+	3	18
+	+	9	9
+	+	10	24
+	+	5	27
+
+> ~/control-flow/database_setup.yml
+	"	5	32
+	^	5	29
+	.	5	32
+	+	15	0
+	+	14	60
+	+	22	39
+	+	29	42
+	+	24	2
+	+	16	3
+	+	22	33
+	+	5	32
+
+> ~/control-flow/database_setup.retry
+	"	1	0
+
+> ~/control-flow/RedHat_database_tasks.yml
+	"	21	0
+
+> ~/data-secret/create_users.yml
+	"	7	2
+	^	7	7
+	.	7	6
+	+	1	226
+	+	1	258
+	+	1	258
+	+	13	2
+	+	2	1
+	+	7	6
+
+> ~/data-secret/secret.yml
+	"	9	0
+
+> ~/data-facts/playbook.yml
+	"	13	6
+	^	13	6
+	.	13	5
+	+	13	5
+
+> ~/data-facts/setup_fact.yml
+	"	16	6
+	^	16	7
+	.	16	6
+	+	16	6
+
+> ~/data-facts/custom.fact
+	"	4	15
+	^	4	16
+	.	4	0
+	+	1	14
+	+	1	29
+	+	4	0
+
+> /etc/ansible/hosts
+	"	48	0
+	^	48	0
+	.	47	23
+	+	44	12
+	+	46	0
+	+	44	0
+	+	47	23
+
+> /etc/ansible/ansible.cfg
+	"	496	2
+	^	496	3
+	.	496	0
+	+	496	0
+
+> ~/data-secret/vault-pass
+	"	1	5
+	^	1	6
+
+> ~/data-variables/playbook.yml
+	"	48	2
+	^	11	2
+	.	10	2
+	+	5	16
+	+	11	9
+	+	12	57
+	+	15	23
+	+	16	13
+	+	15	21
+	+	16	30
+	+	17	28
+	+	20	67
+	+	22	36
+	+	25	1
+	+	26	63
+	+	28	31
+	+	34	35
+	+	53	1
+	+	32	3
+	+	33	3
+	+	34	5
+	+	35	36
+	+	37	50
+	+	39	27
+	+	45	8
+	+	44	0
+	+	45	18
+	+	52	2
+	+	2	1
+	+	5	1
+	+	6	3
+	+	7	3
+	+	8	3
+	+	9	3
+	+	10	2
+
+> ~/playbook-multi/intranet.yml
+	"	45	4
+	^	45	5
+	.	45	5
+	+	6	56
+	+	11	19
+	+	12	0
+	+	13	36
+	+	15	54
+	+	24	5
+	+	13	1
+	+	14	2
+	+	18	1
+	+	19	4
+	+	20	5
+	+	21	4
+	+	22	5
+	+	24	39
+	+	31	35
+	+	45	34
+	+	45	30
+	+	35	22
+	+	37	35
+	+	38	3
+	+	37	8
+	+	45	30
+	+	45	26
+	+	20	19
+	+	19	4
+	+	37	4
+	+	45	27
+	+	35	20
+	+	45	24
+	+	37	0
+	+	38	2
+	+	39	2
+	+	40	2
+	+	41	2
+	+	42	4
+	+	43	5
+	+	44	5
+	+	45	5
+
+> ~/playbook-basic/site.yml
+	"	20	0
+	^	20	3
+	.	20	2
+	+	2	38
+	+	10	39
+	+	12	25
+	+	13	3
+	+	12	5
+	+	15	26
+	+	19	19
+	+	20	2
+
+> ~/test.yml
+	"	2	7
+	^	2	8
+	.	2	7
+	+	2	7
+
+> ~/deploy-manage/ansible.cfg
+	"	4	10
+	^	4	11
+	.	4	10
+	+	1	10
+	+	2	9
+	+	3	0
+	+	4	22
+	+	9	0
+	+	5	7
+	+	6	14
+	+	7	12
+	+	8	16
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	5	7
+	+	6	14
+	+	7	12
+	+	8	16
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	4	10
