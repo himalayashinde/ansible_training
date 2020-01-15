@@ -1,0 +1,568 @@
+    1  ls
+    2  ls -a
+    3  cd .ssh
+    4  ls
+    5  cat lab_rsa.pub 
+    6  clear
+    7  cd ~
+    8  ls
+    9  ls -a
+   10  clear
+   11  yum list install
+   12  id
+   13  history
+   14  clear
+   15  uname -a
+   16  cd ..
+   17  cd 
+   18  ~
+   19  pwd
+   20  cd `
+   21  cd ~
+   22  clear
+   23  yum list installed python
+   24  ll
+   25  lab intro-install setup
+   26  yum list installed python
+   27  sudo yum install ansible -y
+   28  ansible --version
+   29  ansible
+   30  ansible --version
+   31  lab intro-install cleanup
+   32  ansible
+   33  clear
+   34  ansible --version
+   35  /usr
+   36  cd /usr
+   37  ls
+   38  cd bin
+   39  ls
+   40  cat ansible
+   41  clear
+   42  cd ~
+   43  ls
+   44  mkdir app1
+   45  cd app1/
+   46  ls
+   47  cat /etc/ansible/hosts 
+   48  clear
+   49  ls
+   50  cd..
+   51  cd ..
+   52  ls
+   53  cd app1/
+   54  touch hosts
+   55  ll
+   56  cd .
+   57  cd ..
+   58  clear
+   59  ll
+   60  hostname
+   61  clear
+   62  lab deoply-inventory setup
+   63  lab deoploy-inventory setup
+   64  lab deploy-inventory setup
+   65  sudo vim /etc/ansible/hosts
+   66  ansible all --list-hosts
+   67  ansible ungrouped --list-hosts
+   68  ansible webservers --list-hosts
+   69  mkdir deploy-inventory
+   70  pwd
+   71  cd deploy-inventory/
+   72  pwd
+   73  vim inventory
+   74  ansible all -i inventory --list-hosts
+   75  cat inventory 
+   76  vim inventory
+   77  ansible all -i inventory --list-hosts
+   78  ansible ungrouped -i inventory --list-hosts
+   79  vim inventory
+   80  ansible ungrouped -i inventory --list-hosts
+   81  ansible development -i inventory --list-hosts
+   82  ansible testing -i inventory --list-hosts
+   83  ansible production -i inventory --list-hosts
+   84  ansible us -i inventory --list-hosts
+   85  lab deploy-inventory cleanup
+   86  cat /etc/ansible/hosts
+   87  cd /etc/ansible/
+   88  ls
+   89  vi ansible.cfg
+   90  cd ~
+   91  git init
+   92  yum install git
+   93  sudo yum install git
+   94  ll
+   95  ls -a
+   96  git init
+   97  ls -a
+   98  clear
+   99  yum --list installed git 
+  100  yum -list installed git 
+  101  clear
+  102  ll
+  103  git add .
+  104  git commit
+  105  git commit -m "RHEL ANSIBLE"
+  106  git status
+  107  git push https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  108  git commit
+  109  git status
+  110  git push
+  111  git push https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  112  git config --global push.default matching
+  113  git push https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  114  git status -s
+  115  pwd
+  116  ll
+  117  ls -a
+  118  git add .
+  119  git status -s
+  120  git add app1
+  121  git add deploy-inventory/
+  122  git status -s
+  123  git push
+  124  clear
+  125  lab deploy-manage setup
+  126  mkdir deploy-manage
+  127  cd deploy-manage/
+  128  ls
+  129  touch ansible.cfg
+  130  vi ansible.cfg
+  131  ll
+  132  cd .
+  133  ls -a
+  134  cd ..
+  135  ls -a
+  136  ls
+  137  cd deploy-manage/
+  138  ls -a
+  139  ls -lrt
+  140  ls -lart
+  141  touch inventory
+  142  vi inventory 
+  143  cat inventory 
+  144  ansible myself --list-hosts
+  145  ansible intranetweb --list-hosts
+  146  ansible everyone --list-hosts
+  147  ansible
+  148  ansible --version
+  149  ls
+  150  vi ansible.cfg
+  151  ansible --list-hosts
+  152  clear
+  153  ansible intranetweb --list-hosts
+  154  ls
+  155  cat ansible.cfg 
+  156  ansible intranetweb --list-hosts
+  157  vi ansible.cfg 
+  158  ansible intranetweb --list-hosts
+  159  clear
+  160  ansible intranetweb --list-hosts
+  161  ansible --version
+  162  vi ansible.cfg 
+  163  ansible intranetweb --list-hosts
+  164  vi ansible.cfg 
+  165  ansible intranetweb --list-hosts
+  166  vi ansible.cfg 
+  167  ansible intranetweb --list-hosts
+  168  vi ansible.cfg 
+  169  ansible intranetweb --list-hosts
+  170  vi ansible.cfg 
+  171  ansible intranetweb --list-hosts
+  172  git status -s
+  173  ls -a
+  174  cd ..
+  175  ls
+  176  ls -a
+  177  git add .
+  178  git status -s
+  179  git push https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  180  git pull https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  181  git status.
+  182  git status
+  183  ls -a
+  184  cd deploy-inventory/
+  185  ls
+  186  ll
+  187  cd ..
+  188  cd deploy-manage/
+  189  ls
+  190  ll
+  191  cd ..
+  192  git add .
+  193  git status -s
+  194  git push https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  195  git push --set-upstream origin master
+  196  git config list
+  197  git config --list
+  198  git push -u origin master
+  199  git push --set-upstream origin https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  200  git push https://github.com/himalayashinde/ansible_training.git
+  201  git push -u origin master
+  202  clear
+  203  ansible-doc -l
+  204  ansible-doc -l |wc -l
+  205  ansible-doc -l |grep win_
+  206  ansible-doc -l |grep gcp
+  207  ansible-doc -l |grep aws
+  208  ansible-doc -l |grep jenkins
+  209  clear
+  210  ansible-doc user
+  211  cclear
+  212  aansible
+  213  ls
+  214  history
+  215  clear
+  216  ansible -m ping all
+  217  ansible -m raw -a "yum install python -y" all
+  218  ansible -m command -a "id" servera
+  219  ansible -m shell -a "id > /tmp/date" servera
+  220  ifconfig
+  221  clear
+  222  lab deploy-adhoc setup
+  223  sudo cat /etc/sudoers.d/devops
+  224  ssh decops@servera.lab.example.com
+  225  ssh devops@servera.lab.example.com
+  226  ll
+  227  cd deploy-adhoc/
+  228  cat ansible.cfg 
+  229  cat inventory 
+  230  ansible all -m ping
+  231  ansible localhost -m comand -a 'id'
+  232  ansible localhost -m command -a 'id'
+  233  ansible localhost -m command -a 'id' -u devops
+  234  ansible localhost -m command -a 'cat /etc/motd' -u devops
+  235  ansible localhost -m copy -a 'content="managed by ansible\n" dest=/etc/motd' -u devops
+  236  ansible localhost -m copy -a 'content="managed by ansible\n" dest=/etc/motd' -u devops -b
+  237  ansible all -m command -a 'cat /etc/motd' -u devops
+  238  lab deploy-adhoc cleanup
+  239  cd ..
+  240  touch test.yml
+  241  vi test.yml
+  242   clear
+  243  lab playbook-basic setup
+  244  ls
+  245  cd playbook-basic
+  246  ls
+  247  vi site.yml
+  248  ansible-playbook --syntax-check site.yml
+  249  ansible-playbook check site.yml
+  250  ansible-playbook site.yml check
+  251  ansible-playbook site.yml -C
+  252  ansible-playbook site.yml
+  253  vi site.yml
+  254  ansible-playbook site.yml -C
+  255  ansible-playbook --syntax-check site.yml
+  256  vi site.yml
+  257  curl serverc.lab.example.com
+  258  curl serverd.lab.example.com
+  259  lab playbook-basic cleanup
+  260  vi site.yml
+  261  lab playbook-multi setup
+  262  l
+  263  ll
+  264  cd ..
+  265  ll
+  266  cd playbook-multi/
+  267  ls
+  268  vi intranet.yml
+  269  ansible-playbook --syntax-check intranet.yml
+  270  vi intranet.yml
+  271  ansible-playbook --syntax-check intranet.yml
+  272  vi intranet.yml
+  273  ansible-playbook --syntax-check intranet.yml
+  274  vi intranet.yml
+  275  ansible-playbook --syntax-check intranet.yml
+  276  vi intranet.yml
+  277  ansible-playbook --syntax-check intranet.yml
+  278  vi intranet.yml
+  279  ansible-playbook --syntax-check intranet.yml
+  280  vi intranet.yml
+  281  ansible-playbook --syntax-check intranet.yml
+  282  ansible-playbook -v intranet.yml
+  283  lab playbook-multi cleanup
+  284  cd ..
+  285  vi
+  286  ll
+  287  clear
+  288  lab data-variable setup
+  289  lab data-variables setup
+  290  ll
+  291  cd data-variables/
+  292  ll
+  293  vi playbook.yml
+  294  ansible-playbook --syntax-check playbook.yml
+  295  vi playbook.yml
+  296  ansible-playbook --syntax-check playbook.yml
+  297  ansible-playbook playbook.yml -C
+  298  ansible-playbook playbook.yml
+  299  lab data-variables cleanup
+  300  ifconfig
+  301  clear
+  302  ansible-vault
+  303  clear
+  304  lab data-secret setup
+  305  ll
+  306  cd ..
+  307  ll
+  308  cd data-secret/
+  309  ll
+  310  vi secret.yml 
+  311  ansible-vault edit secret.yml
+  312  vi create_users.yml
+  313  ansible-playbook --syntac-check create_users.yml 
+  314  ansible-playbook --syntax-check create_users.yml 
+  315  ansible-playbook --syntax-check --ask-vault-pass create_users.yml 
+  316  echo 'redhat' > vault-pass
+  317  ll
+  318  chmod 0600 vault-pass
+  319  ll
+  320  ansible-playbook --vault-passsword-file=vault-pass create_users.yml 
+  321  ansible-playbook --vault-password-file = vault-pass create_users.yml
+  322  ansible-playbook --vault-password-file=vault-pass create_users.yml
+  323  ll
+  324  vi vault-pass 
+  325  vi secret.yml
+  326  ansible-playbook --vault-password-file=vault-pass create_users.yml
+  327  yum update
+  328  sudo yum update
+  329  sudo yum upgrade
+  330  docker
+  331  yum install docker.io
+  332  sudo yum install docker.io
+  333  clear
+  334  apt-get 
+  335  clear
+  336  ifconfig
+  337  ssh student@172.25.252.11
+  338  ll
+  339  cd ..
+  340  ll
+  341  touch himalaya
+  342  ssh student@172.25.252.11
+  343  clear
+  344  ll
+  345  ssh student@172.25.252.12
+  346  clear
+  347  ssh student@172.25.252.06
+  348  clear
+  349  ansible -m debug -a "var=hostvars" prod
+  350  ansible -m debug -a "var=hostvars" localhost
+  351  ansible -m debug -a "var=hostvars" workstation
+  352  clear
+  353  ls
+  354  git pull https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  355  cd data-secret/
+  356  ls -a
+  357  cat secret.yml 
+  358  cat create_users.yml 
+  359  clear
+  360  vi create_users.yml 
+  361  ansible-playbook --syntax-check create_users.yml 
+  362  ansible-playbook --syntax-check create_users.yml --ask-vault-pass create_users.yml 
+  363  ls -a
+  364  rm create_users.retry 
+  365  ls -a
+  366  ll
+  367  ansible-playbook --syntax-check create_users.yml --ask-vault-pass create_users.yml 
+  368  cat vault-pass
+  369  ll
+  370  ansible-playbook --vault-password-file=vault-pass create_users.yml
+  371  lab data-secret cleanup
+  372  cd ..
+  373  lab data-facts setup
+  374  ansible webserver -m setup
+  375  ansible --version
+  376  vi ---
+  377  - name: create user account for all our servers
+  378    hosts: devservers
+  379    become: true
+  380    remote_user: devops
+  381    vars_files: 
+  382      - secret.yml
+  383    tasks: 
+  384      - name: creating user from secret.yml
+  385        user:
+  386          name: "{{ username }}"
+  387          password: "{{ pwhash }}"
+  388  ... clear
+  389  vi /etc/ansible/ansible.cfg
+  390  ansible webserver -m setup
+  391  vi /etc/ansible/
+  392  cd /etc/ansible/
+  393  ls -a
+  394  cd hosts
+  395  vi hosts 
+  396  ll
+  397  chmod 640 hosts
+  398  sudo chmod 640 hosts
+  399  ll
+  400  sudo chmod 666 hosts
+  401  ll
+  402  vi hosts
+  403  ansible webserver -m setup
+  404  ansible-playbook --vault-password-file=vault-pass create_users.yml
+  405  cd ~
+  406  cd data-facts/
+  407  ls
+  408  ansible-playbook --vault-password-file=vault-pass create_users.yml
+  409  clear
+  410  ll
+  411  ansible webserver -m setup
+  412  vi custom.fact
+  413  vi setup_fact.yml
+  414  ansible-playbook --syntax-check setup_fact.yml
+  415  ansible-playbook --check setup_fact.yml
+  416  ansible-playbook setup_fact.yml
+  417  vi playbook.yml
+  418  ansible-playbook --syntax-check playbook.yml 
+  419  ansible servera.lab.example.com -m command -a 'systemctl status httpd'
+  420  ansible-playbook -check playbook.yml 
+  421  vi playbook.yml
+  422  ansible servera.lab.example.com -m command -a 'systemctl status httpd'
+  423  ansible-playbook playbook.yml 
+  424  ansible servera.lab.example.com -m command -a 'systemctl status httpd'
+  425  lab data-facts cleanup
+  426  lab data-secret setup
+  427  cd ..
+  428  c data-secret/
+  429  cd data-secret/
+  430  ls
+  431  rm create_users.retry
+  432  ansible-vault edit secret.yml
+  433  ansible-playbook --syntax-check secret.yml
+  434  ansible-playbook --syntax-check secret.yml --ask-vault-pass create_users.yml
+  435  vi create_users.yml
+  436  ansible-playbook --syntax-check secret.yml
+  437  vi create_users.yml
+  438  ansible-playbook --syntax-check secret.yml --ask-vault-pass create_users.yml
+  439  vi secret.yml
+  440  ansible-vault edit secret.yml
+  441  ansible-vault decrypt secret1.yml --output=secret1-decrypted.yml
+  442  touch sercet1.yml
+  443  ansible-vault decrypt secret1.yml --output=secret1-decrypted.yml
+  444  ll
+  445  rm sercet1.yml 
+  446  ansible-playbook --syntax-check secret.yml --ask-vault-pass create_users.yml
+  447  vi secret.yml
+  448  ansible-vault edit secret.yml
+  449  vim create_users.yml
+  450  ansible-playbook --syntax-check secret.yml --ask-vault-pass create_users.yml
+  451  vim create_users.yml
+  452  ansible-vault view secret.yml
+  453  cat create_users.yml 
+  454  ansible-vault view secret.yml
+  455  ansible-playbook --syntax-check --ask-vault-pass create_users.yml
+  456  ansible-playbook --vault-password-file=vault-pass create_users.yml
+  457  ssh -o PreferredAuthentication=password ansibleuser1@servera.lab.example.com 
+  458  ssh -o PreferredAuthentications=password ansibleuser1@servera.lab.example.com 
+  459  lab data-secret cleanup
+  460  lab control-flow setup 
+  461  cd ..
+  462  cd control-flow/
+  463  ll
+  464  vi database_setup.yml
+  465  ansible-playbook --syntax-check database_setup.yml
+  466  lll
+  467  ll
+  468  vi RedHat_database_tasks.yml
+  469  vi database_users_tasks.yml
+  470  cat group_vars/database_servers.yml
+  471  vi database_users_tasks.yml
+  472  ansible-playbook --syntax-check database_setup.yml
+  473  ansible-playbook --check database_setup.yml
+  474  vi database_setup.yml
+  475  ansible-playbook database_setup.yml
+  476  vi database_setup.yml
+  477  vi RedHat_database_tasks.yml 
+  478  cd group_vars/
+  479  ll
+  480  cd ..
+  481  ll
+  482  vi database_users_tasks.yml 
+  483  ansible-playbook --check database_setup.yml
+  484  vi database_users_tasks.yml 
+  485  ansible-playbook --syntan-check database_setup.yml
+  486  ansible-playbook --syntax-check database_setup.yml
+  487  ansible-playbook -check database_setup.yml
+  488  ansible-playbook database_setup.yml
+  489  vi database_setup.yml 
+  490  ansible-playbook -check database_setup.yml
+  491  vi database_setup.retry 
+  492  vi database_setup.yml
+  493  ansible-playbook -check database_setup.yml
+  494  ansible-playbook database_setup.yml
+  495  vi database_setup.yml 
+  496  ansible-playbook -check database_setup.yml
+  497  ansible-playbook --syntax-check database_setup.yml
+  498  rm database_setup.retry 
+  499  ansible-playbook --syntax-check database_setup.yml
+  500  ansible-playbook -check database_setup.yml
+  501  ansible-playbook database_setup.yml
+  502  vi database_setup.yml
+  503  ansible-playbook database_setup.yml
+  504  vi database_setup.yml
+  505  ansible-playbook database_setup.yml
+  506  vi database_setup.yml
+  507  ansible-playbook database_setup.yml
+  508  vi database_users_tasks.yml
+  509  ansible-playbook database_setup.yml
+  510  lab control-flow cleanup
+  511  lab control-handlers setup
+  512  cd ..
+  513  lll
+  514  ll
+  515  cd control-handlers/
+  516  ll
+  517  vi configure_db.yml
+  518  ansible-playbook --syntax-check configure_db.yml
+  519  vi configure_db.yml
+  520  ansible-playbook --syntax-check configure_db.yml
+  521  vi configure_db.yml
+  522  ansible-playbook --syntax-check configure_db.yml
+  523  vi configure_db.yml
+  524  ansible-playbook --syntax-check configure_db.yml
+  525  ansible-playbook -check configure_db.yml
+  526  ansible-playbook configure_db.yml
+  527  lab control-handlers cleanup
+  528  lab control-errors setup
+  529  ll
+  530  lab control-handlers cleanup
+  531  lab control-errors cleanup
+  532  lab control-errors setup
+  533  clear
+  534  cd ..
+  535  ll
+  536  cd control-errors/
+  537  ll
+  538  vi inventory 
+  539  cat ansible.cfg 
+  540  vi playbook.yml
+  541  ansible-playbook --syntax-check playbook.yml
+  542  ansible-playbook -check playbook.yml
+  543  ansible-playbook playbook.yml
+  544  vi playbook.yml
+  545  ansible-playbook playbook.yml
+  546  vi playbook.yml
+  547  ansible-playbook playbook.yml
+  548  vi playbook.yml
+  549  ansible-playbook playbook.yml
+  550  vi playbook.yml
+  551  ansible-playbook playbook.yml
+  552  vi playbook.yml
+  553  ansible-playbook playbook.yml
+  554  vi playbook.yml
+  555  ansible-playbook playbook.yml
+  556  vi playbook.yml
+  557  ansible-playbook playbook.yml
+  558  lab control-errors cleanup
+  559  cd ..
+  560  git push https://github.com/himalayashinde/ansible_training.git
+  561  git status -s
+  562  git add .
+  563  git status -s
+  564  git commit -m "Ansible training content day 3"
+  565  git push https://github.com/himalayashinde/ansible_training.git
+  566  git remote add origin https://github.com/himalayashinde/ansible_training.git
+  567  git push -u origin --all
+  568  history >> ansible_training_all_commands.txt
