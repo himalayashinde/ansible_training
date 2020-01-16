@@ -46,6 +46,12 @@
         body: "always_bcc is {{bcc_state.stdout}}"
       when: bcc_state.stdout != 'always_bcc ='
 
+    - name: postfix firewalld config
+      firewalld:
+        state: enabled
+        permanent: true
+        immediate: true
+        service: smtp
   handlers:
     - name: restart postfix
       service:
