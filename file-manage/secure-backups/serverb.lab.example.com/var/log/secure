@@ -1,0 +1,49 @@
+Nov 29 13:11:45 jegui polkitd[1570]: Loading rules from directory /etc/polkit-1/rules.d
+Nov 29 13:11:45 jegui polkitd[1570]: Loading rules from directory /usr/share/polkit-1/rules.d
+Nov 29 13:11:45 jegui polkitd[1570]: Finished loading, compiling and executing 2 rules
+Nov 29 13:11:45 jegui polkitd[1570]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Nov 29 13:11:48 jegui useradd[3072]: new group: name=student, GID=1000
+Nov 29 13:11:48 jegui useradd[3072]: new user: name=student, UID=1000, GID=1000, home=/home/student, shell=/bin/bash
+Nov 29 13:11:48 jegui useradd[3072]: add 'student' to group 'wheel'
+Nov 29 13:11:48 jegui useradd[3072]: add 'student' to shadow group 'wheel'
+Nov 29 13:11:48 jegui sshd[3174]: Server listening on 0.0.0.0 port 22.
+Nov 29 13:11:48 jegui sshd[3174]: Server listening on :: port 22.
+Nov 29 13:11:49 jegui sshd[3174]: Received signal 15; terminating.
+Nov 29 13:11:49 jegui sshd[3238]: Server listening on 0.0.0.0 port 22.
+Nov 29 13:11:49 jegui sshd[3238]: Server listening on :: port 22.
+Nov 29 13:12:43 jegui groupadd[12274]: group added to /etc/group: name=abrt, GID=173
+Nov 29 13:12:43 jegui groupadd[12274]: group added to /etc/gshadow: name=abrt
+Nov 29 13:12:43 jegui groupadd[12274]: new group: name=abrt, GID=173
+Nov 29 13:12:43 jegui useradd[12279]: new user: name=abrt, UID=173, GID=173, home=/etc/abrt, shell=/sbin/nologin
+Nov 29 13:12:47 jegui groupadd[12417]: group added to /etc/group: name=libstoragemgmt, GID=994
+Nov 29 13:12:47 jegui groupadd[12417]: group added to /etc/gshadow: name=libstoragemgmt
+Nov 29 13:12:47 jegui groupadd[12417]: new group: name=libstoragemgmt, GID=994
+Nov 29 13:12:47 jegui useradd[12422]: new user: name=libstoragemgmt, UID=997, GID=994, home=/var/run/lsm, shell=/sbin/nologin
+Nov 29 13:12:49 jegui groupadd[12483]: group added to /etc/group: name=stapusr, GID=156
+Nov 29 13:12:49 jegui groupadd[12483]: group added to /etc/gshadow: name=stapusr
+Nov 29 13:12:49 jegui groupadd[12483]: new group: name=stapusr, GID=156
+Nov 29 13:12:49 jegui groupadd[12488]: group added to /etc/group: name=stapsys, GID=157
+Nov 29 13:12:49 jegui groupadd[12488]: group added to /etc/gshadow: name=stapsys
+Nov 29 13:12:49 jegui groupadd[12488]: new group: name=stapsys, GID=157
+Nov 29 13:12:49 jegui groupadd[12493]: group added to /etc/group: name=stapdev, GID=158
+Nov 29 13:12:49 jegui groupadd[12493]: group added to /etc/gshadow: name=stapdev
+Nov 29 13:12:49 jegui groupadd[12493]: new group: name=stapdev, GID=158
+Nov 29 13:12:58 jegui groupadd[12627]: group added to /etc/group: name=ntp, GID=38
+Nov 29 13:12:58 jegui groupadd[12627]: group added to /etc/gshadow: name=ntp
+Nov 29 13:12:58 jegui groupadd[12627]: new group: name=ntp, GID=38
+Nov 29 13:12:58 jegui useradd[12631]: new user: name=ntp, UID=38, GID=38, home=/etc/ntp, shell=/sbin/nologin
+Nov 29 13:13:15 jegui groupadd[12689]: group added to /etc/group: name=slocate, GID=21
+Nov 29 13:13:15 jegui groupadd[12689]: group added to /etc/gshadow: name=slocate
+Nov 29 13:13:15 jegui groupadd[12689]: new group: name=slocate, GID=21
+Nov 29 13:14:05 jegui passwd: pam_unix(passwd:chauthtok): password changed for root
+Jan 13 00:19:56 jegui polkitd[2526]: Loading rules from directory /etc/polkit-1/rules.d
+Jan 13 00:19:56 jegui polkitd[2526]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jan 13 00:19:56 jegui polkitd[2526]: Finished loading, compiling and executing 2 rules
+Jan 13 00:19:56 jegui polkitd[2526]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jan 13 00:20:28 jegui sshd[3060]: Server listening on 0.0.0.0 port 22.
+Jan 13 00:20:28 jegui sshd[3060]: Server listening on :: port 22.
+Jan 13 00:20:29 jegui useradd[3351]: new group: name=devops, GID=1001
+Jan 13 00:20:29 jegui useradd[3351]: new user: name=devops, UID=1001, GID=1001, home=/home/devops, shell=/bin/bash
+Jan 13 05:37:32 jegui sshd[32421]: Bad protocol version identification 'brain' from 172.25.250.254 port 53404
+Jan 15 06:20:37 jegui sshd[3279]: Accepted publickey for root from 172.25.250.254 port 53862 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jan 15 06:20:37 jegui sshd[3279]: pam_unix(sshd:session): session opened for user root by (uid=0)
