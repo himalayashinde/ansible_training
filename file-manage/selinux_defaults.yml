@@ -1,0 +1,12 @@
+---
+- name: using file module to ensure SELinux file content
+  hosts: all
+  remote_user: root
+  tasks:
+    - name: selinux file content is set to defaults
+      file: 
+        path: /home/devops/users.txt
+        seuser: _default
+        serole: _default
+        setype: _default
+        selevel: _default

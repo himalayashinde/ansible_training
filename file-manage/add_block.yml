@@ -1,0 +1,13 @@
+---
+- name: add block of text to an existing file
+  hosts: all
+  remote_user: devops
+  tasks: 
+    - name: add a block of text to an existing file
+      blockinfile: 
+        path: /home/devops/users.txt
+        block: |
+          this blobk of text consists of two lines.
+          They have been added by blockinfile module.
+        state: present
+...
